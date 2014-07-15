@@ -84,7 +84,7 @@ public class Question {
 
         for (int i = 0; i < 9; i++) {
             System.out.println("==========");
-            Node node = createNodeList(arr1);
+            Node node = createNodeList(arr2);
             node.print();
             System.out.println("Partition by " + i);
             Node partition = partition(node, i);
