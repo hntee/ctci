@@ -17,6 +17,7 @@ public class Question {
         int mask_left = 1 << 31 >> (31 - i);
         // 00..000111111
         int mask_right = ~(1 << 31 >> (31 - (j + 1)));
+        // mask_left ^ mask_right: 111111100000011111
         return ((mask_left ^ mask_right) & N) | (M << i) ;
     }
 
